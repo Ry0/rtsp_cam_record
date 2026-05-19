@@ -1,0 +1,15 @@
+[Unit]
+Description=RTSP Camera Record Python Application
+After=network.target
+
+[Service]
+Type=simple
+User=ry0
+Group=ry0
+WorkingDirectory=/home/ry0/Workspace/Python/rtsp_cam_record
+ExecStart=/home/ry0/Workspace/Python/rtsp_cam_record/.venv/bin/python /home/ry0/Workspace/Python/rtsp_cam_record/main.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,4 @@
+rtsp_url: "rtsp://hoge:hoge@192.168.x.y/live0"
+start_time: "21:53"
+end_time: "21:55"   # 開始より早い時間なら自動的に翌日の01:30まで録画します
+save_path: "/Users/ryo/Desktop"
